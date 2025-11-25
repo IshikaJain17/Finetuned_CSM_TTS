@@ -1,2 +1,63 @@
-# Finetuned_CSM_TTS
-This project implements a fine-tuned version of CSM-1B, a semantic, emotion-aware TTS model that generates natural speech directly from text without explicit emotion tags. The included Colab notebook demonstrates text-to-audio generation, contextual prosody, and conversational tone control using CSM’s built-in semantic understanding.
+Fine-Tuned CSM (Contextual Speech Model) for Emotion-Aware Text-to-Speech
+
+This repository contains a custom fine-tuned version of CSM-1B, a state-of-the-art contextual speech generation model. Unlike traditional TTS systems that rely on fixed emotion labels (e.g., <angry>, <happy>), CSM understands emotion implicitly through semantic meaning and conversational context.
+
+This project demonstrates how to:
+
+Load and run the CSM-1B TTS model
+
+Generate speech directly from text
+
+Use conversational prompts to influence tone, prosody, and emotion
+
+Fine-tune certain components to improve naturalness and contextual expressiveness
+
+Run everything in Google Colab for easy reproducibility
+
+The repository includes the complete Colab-friendly notebook:
+
+Sesame_CSM_(1B)-TTS.ipynb – Ready to run and generate human-like contextual speech.
+
+📘 README.md (full file)
+# Fine-Tuned CSM (Contextual Speech Model) — Emotion-Aware Text-to-Speech (TTS)
+
+This repository contains an implementation and light fine-tuning workflow for **CSM-1B (Contextual Speech Model)**, designed to produce natural, expressive speech directly from text.  
+CSM goes beyond traditional TTS by using *semantic understanding* instead of rigid emotion tokens. The model automatically infers tone, emotion, and conversational flow from the text itself.
+
+---
+
+## 🚀 Features
+- 🎤 **Text-to-Speech with contextual emotion**
+- 🤖 **No emotion tags needed** — emotions come from semantics
+- 🧠 Natural prosody, pauses, and speaking style
+- 📄 Google-Colab-ready notebook (`Sesame_CSM_(1B)-TTS.ipynb`)
+- 🔧 Supports fine-tuning of:
+  - Prompt style
+  - Speaker embeddings
+  - Conversational structure
+- 🔊 Outputs high-quality WAV audio
+
+---
+
+## 📂 Repository Contents
+
+
+📁 project/
+├── Sesam e_CSM_(1B)-TTS.ipynb # Main notebook
+├── README.md # Documentation
+└── /audio_outputs # Generated samples (optional)
+
+
+---
+
+## 🛠️ Installation
+
+This project is built to run easily in **Google Colab**.
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/<your-username>/<repo-name>
+cd <repo-name>
+
+2. Install dependencies (in Colab or locally)
+pip install transformers accelerate soundfile torch numpy scipy
