@@ -1,24 +1,3 @@
-Fine-Tuned CSM (Contextual Speech Model) for Emotion-Aware Text-to-Speech
-
-This repository contains a custom fine-tuned version of CSM-1B, a state-of-the-art contextual speech generation model. Unlike traditional TTS systems that rely on fixed emotion labels (e.g., <angry>, <happy>), CSM understands emotion implicitly through semantic meaning and conversational context.
-
-This project demonstrates how to:
-
-Load and run the CSM-1B TTS model
-
-Generate speech directly from text
-
-Use conversational prompts to influence tone, prosody, and emotion
-
-Fine-tune certain components to improve naturalness and contextual expressiveness
-
-Run everything in Google Colab for easy reproducibility
-
-The repository includes the complete Colab-friendly notebook:
-
-Sesame_CSM_(1B)-TTS.ipynb – Ready to run and generate human-like contextual speech.
-
-📘 README.md (full file)
 # Fine-Tuned CSM (Contextual Speech Model) — Emotion-Aware Text-to-Speech (TTS)
 
 This repository contains an implementation and light fine-tuning workflow for **CSM-1B (Contextual Speech Model)**, designed to produce natural, expressive speech directly from text.  
